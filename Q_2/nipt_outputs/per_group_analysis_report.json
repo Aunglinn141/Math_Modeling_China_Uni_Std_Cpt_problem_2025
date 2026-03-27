@@ -1,0 +1,123 @@
+{
+  "analysis_type": "per_group_independent_analysis",
+  "summary": {
+    "range_diversity": {
+      "min_analysis_start": 10.3565723046851,
+      "max_analysis_start": 10.635223988204022,
+      "min_analysis_end": 27.033035160443944,
+      "max_analysis_end": 29.6434276953149,
+      "avg_range_width": 17.559092974902768
+    },
+    "quality_stats": {
+      "total_groups": 4,
+      "groups_with_warnings": 0,
+      "boundary_limited_groups": 4,
+      "avg_samples_per_group": 268.5
+    },
+    "result_diversity": {
+      "optimal_week_range": [
+        26.995536268127424,
+        29.556572304685034
+      ],
+      "early_detection_feasible_groups": 0,
+      "high_confidence_groups": 0
+    }
+  },
+  "group_details": [
+    {
+      "bmi_range": "[20.7, 29.4]",
+      "sample_count": 216,
+      "data_range": [
+        11.0,
+        29.0
+      ],
+      "analysis_range": [
+        10.3565723046851,
+        29.6434276953149
+      ],
+      "statistics": {
+        "mean": 17.113095238095237,
+        "std": 4.289517968766001,
+        "reach_rate": 0.5370370370370371
+      },
+      "coverage": {
+        "early_samples": 13,
+        "late_samples": 66,
+        "total_weeks_span": 18.0
+      },
+      "analysis_notes": []
+    },
+    {
+      "bmi_range": "[29.5, 30.4]",
+      "sample_count": 162,
+      "data_range": [
+        11.0,
+        26.428571428571427
+      ],
+      "analysis_range": [
+        10.395536268127483,
+        27.033035160443944
+      ],
+      "statistics": {
+        "mean": 16.82363315696649,
+        "std": 4.029758212483454,
+        "reach_rate": 0.5061728395061729
+      },
+      "coverage": {
+        "early_samples": 10,
+        "late_samples": 40,
+        "total_weeks_span": 15.428571428571427
+      },
+      "analysis_notes": []
+    },
+    {
+      "bmi_range": "[30.4, 34.5]",
+      "sample_count": 537,
+      "data_range": [
+        11.0,
+        27.714285714285715
+      ],
+      "analysis_range": [
+        10.423052917749294,
+        28.291232796536423
+      ],
+      "statistics": {
+        "mean": 16.39372173450386,
+        "std": 3.8463138816713793,
+        "reach_rate": 0.5307262569832403
+      },
+      "coverage": {
+        "early_samples": 27,
+        "late_samples": 115,
+        "total_weeks_span": 16.714285714285715
+      },
+      "analysis_notes": []
+    },
+    {
+      "bmi_range": "[34.6, 46.9]",
+      "sample_count": 159,
+      "data_range": [
+        11.285714285714286,
+        26.428571428571427
+      ],
+      "analysis_range": [
+        10.635223988204022,
+        27.079061726081694
+      ],
+      "statistics": {
+        "mean": 17.972147349505843,
+        "std": 4.336601983401771,
+        "reach_rate": 0.3710691823899371
+      },
+      "coverage": {
+        "early_samples": 6,
+        "late_samples": 63,
+        "total_weeks_span": 15.14285714285714
+      },
+      "analysis_notes": []
+    }
+  ],
+  "recommendations": [
+    "4 个组受边界限制，建议针对性扩展数据收集"
+  ]
+}

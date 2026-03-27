@@ -1,0 +1,2 @@
+bmi_group,n_patients,event_rate,optimal_week,probability_at_optimal,ci_lower,ci_upper,target_probability
+Obese,262,0.8969465648854962,23.5,0.9036278399705449,21.0,24.0,0.9

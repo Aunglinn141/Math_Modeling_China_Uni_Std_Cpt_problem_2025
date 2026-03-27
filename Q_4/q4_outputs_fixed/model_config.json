@@ -1,0 +1,23 @@
+{
+  "z13": "z_13",
+  "z18": "z_18",
+  "z21": "z_21",
+  "zx": "z_x",
+  "gc": null,
+  "reads": null,
+  "reads_ratio": null,
+  "bmi": "bmi",
+  "maternal_age": "age",
+  "gestational_weeks": null,
+  "label": "zscore_abnormal",
+  "fetal_sex": "fetal_sex",
+  "zscore_threshold": 2.5,
+  "abnormal_detection_method": "zscore",
+  "percentile_threshold": 95.0,
+  "force_create_labels": false,
+  "target_fpr": 0.01,
+  "model": "lr",
+  "test_size": 0.2,
+  "cv_folds": 5,
+  "random_state": 42
+}

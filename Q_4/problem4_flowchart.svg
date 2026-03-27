@@ -1,0 +1,94 @@
+<svg viewBox="0 0 600 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title-text { font-family: 'Microsoft YaHei', sans-serif; font-size: 16px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+      .process-text { font-family: 'Microsoft YaHei', sans-serif; font-size: 12px; text-anchor: middle; fill: #2c3e50; }
+      .small-text { font-family: 'Microsoft YaHei', sans-serif; font-size: 10px; text-anchor: middle; fill: #2c3e50; }
+      .start-end { fill: #ecf0f1; stroke: #2c3e50; stroke-width: 2; }
+      .process { fill: #3498db; stroke: #2980b9; stroke-width: 2; }
+      .decision { fill: #f39c12; stroke: #e67e22; stroke-width: 2; }
+      .result { fill: #27ae60; stroke: #229954; stroke-width: 2; }
+      .arrow { stroke: #2c3e50; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50" />
+    </marker>
+  </defs>
+  
+  <!-- 标题 -->
+  <text x="300" y="25" class="title-text">女胎异常判定流程图</text>
+  
+  <!-- 开始 -->
+  <ellipse cx="300" cy="60" rx="60" ry="25" class="start-end"/>
+  <text x="300" y="67" class="process-text">开始</text>
+  
+  <!-- 数据加载 -->
+  <rect x="225" y="110" width="150" height="40" class="process"/>
+  <text x="300" y="135" class="process-text" fill="white">加载NIPT数据</text>
+  
+  <!-- 女胎筛选 -->
+  <rect x="225" y="180" width="150" height="40" class="process"/>
+  <text x="300" y="205" class="process-text" fill="white">筛选女胎样本</text>
+  
+  <!-- 特征提取 -->
+  <rect x="225" y="250" width="150" height="40" class="process"/>
+  <text x="300" y="270" class="process-text" fill="white">提取多维特征</text>
+  <text x="300" y="285" class="small-text" fill="white">Z值+测序质量+BMI</text>
+  
+  <!-- 判断：是否有标签 -->
+  <polygon points="250,320 350,320 375,345 350,370 250,370 225,345" class="decision"/>
+  <text x="300" y="345" class="process-text" fill="white">是否有</text>
+  <text x="300" y="360" class="process-text" fill="white">异常标签?</text>
+  
+  <!-- 创建标签 -->
+  <rect x="400" y="325" width="120" height="40" class="process"/>
+  <text x="460" y="345" class="process-text" fill="white">基于Z-score</text>
+  <text x="460" y="360" class="small-text" fill="white">创建异常标签</text>
+  
+  <!-- 数据分割 -->
+  <rect x="225" y="410" width="150" height="40" class="process"/>
+  <text x="300" y="435" class="process-text" fill="white">训练/测试集分割</text>
+  
+  <!-- 模型训练 -->
+  <rect x="225" y="480" width="150" height="40" class="process"/>
+  <text x="300" y="500" class="process-text" fill="white">代价敏感训练</text>
+  <text x="300" y="515" class="small-text" fill="white">LR+XGB+LGBM</text>
+  
+  <!-- 阈值优化 -->
+  <rect x="225" y="550" width="150" height="40" class="process"/>
+  <text x="300" y="570" class="process-text" fill="white">阈值优化</text>
+  <text x="300" y="585" class="small-text" fill="white">最大化灵敏度</text>
+  
+  <!-- 性能评估 -->
+  <rect x="225" y="620" width="150" height="40" class="result"/>
+  <text x="300" y="645" class="process-text" fill="white">输出诊断模型</text>
+  
+  <!-- 结束 -->
+  <ellipse cx="300" cy="695" rx="60" ry="25" class="start-end"/>
+  <text x="300" y="702" class="process-text">结束</text>
+  
+  <!-- 连接线 -->
+  <line x1="300" y1="85" x2="300" y2="110" class="arrow"/>
+  <line x1="300" y1="150" x2="300" y2="180" class="arrow"/>
+  <line x1="300" y1="220" x2="300" y2="250" class="arrow"/>
+  <line x1="300" y1="290" x2="300" y2="320" class="arrow"/>
+  
+  <!-- 判断分支 -->
+  <line x1="375" y1="345" x2="400" y2="345" class="arrow"/>
+  <text x="385" y="340" class="small-text">否</text>
+  
+  <!-- 从创建标签回到主流程 -->
+  <line x1="460" y1="365" x2="460" y2="390" class="arrow"/>
+  <line x1="460" y1="390" x2="300" y2="390" class="arrow"/>
+  <line x1="300" y1="390" x2="300" y2="410" class="arrow"/>
+  
+  <!-- 有标签的分支 -->
+  <line x1="300" y1="370" x2="300" y2="410" class="arrow"/>
+  <text x="310" y="385" class="small-text">是</text>
+  
+  <line x1="300" y1="450" x2="300" y2="480" class="arrow"/>
+  <line x1="300" y1="520" x2="300" y2="550" class="arrow"/>
+  <line x1="300" y1="590" x2="300" y2="620" class="arrow"/>
+  <line x1="300" y1="660" x2="300" y2="670" class="arrow"/>
+  
+</svg>

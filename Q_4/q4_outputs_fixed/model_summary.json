@@ -1,0 +1,60 @@
+{
+  "model_info": {
+    "model_type": "LogisticRegression",
+    "features_used": [
+      "z_13",
+      "z_18",
+      "z_21",
+      "z_x",
+      "bmi",
+      "age"
+    ],
+    "n_features": 6,
+    "target_fpr": 0.01,
+    "abnormal_detection_method": "zscore",
+    "zscore_threshold": 2.5
+  },
+  "cross_validation": {
+    "cv_roc_auc_mean": 0.7705199255628177,
+    "cv_roc_auc_std": 0.08673400930026842,
+    "cv_pr_auc_mean": 0.643217933730305,
+    "cv_pr_auc_std": 0.1199458727570557
+  },
+  "test_performance": {
+    "threshold": 0.7337815310744797,
+    "fpr": 0.01,
+    "tpr": 0.38095238095238093,
+    "specificity": 0.99,
+    "sensitivity": 0.38095238095238093,
+    "roc_auc": 0.7538095238095238,
+    "pr_auc": 0.6571219747211454
+  },
+  "confidence_intervals": {
+    "sensitivity_ci": [
+      0.18181818181818182,
+      0.6
+    ],
+    "specificity_ci": [
+      0.9690721649484536,
+      1.0
+    ],
+    "roc_auc_ci": [
+      0.5886854135984292,
+      0.9034609338881183
+    ],
+    "pr_auc_ci": [
+      0.45168986276546297,
+      0.8197233232683632
+    ]
+  },
+  "confusion_matrix": [
+    [
+      99,
+      1
+    ],
+    [
+      13,
+      8
+    ]
+  ]
+}
