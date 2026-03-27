@@ -2,7 +2,7 @@
 
 Choose your language: [English](#english) | [简体中文](#简体中文)
 
-License: [MIT License](license.md)
+License: [MIT License](LICENSE.md)
 
 <a id="english"></a>
 ## English
@@ -226,7 +226,7 @@ Run the project in this order:
 
 ### License
 
-This project is released under the MIT License. See [license.md](license.md).
+This project is released under the MIT License. See [license.md](LICENSE.md).
 
 ---
 
@@ -452,4 +452,4 @@ python question_4.py --help
 
 ### 许可证
 
-本项目采用 MIT 许可证，详见 [license.md](license.md)。
+本项目采用 MIT 许可证，详见 [license.md](LICENSE.md)。
